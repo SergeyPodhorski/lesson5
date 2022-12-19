@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    margin: 0 auto;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1280px;
+}
+.header {
+    display: flex;
+    width:100%;
+    background: #4C97A2;
+}
+.burger {
+    position: relative;
+    left:calc(100% - 55%);
+    top: 20px;
+    height: 20px;
+    width: 150px;
+    display: none;
+    background: red;
+}
+.burger::before {
+    content: "";
+    position: absolute;
+    right: 0.5px;
+    top: 30px;
+    width: 150px;
+    height: 20px;
+    background: red;
+}
+.burger::after {
+    content: "";
+    position: absolute;
+    right: 0.5px;
+    top: 60px;
+    width: 150px;
+    height: 20px;
+    background: red;
+}
+h1 {
+    font-size: 40px;
+    font-family: CherrySwash-Regular;
+    color: white;
+}
+.nav {
+    position: relative;
+    width:50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    text-align: center;
+    background: #4C97A2;
+}
+.slash {
+   position: absolute;
+   top: 40px;
+   left: 140px;
+   width: 1px;
+   height: 18px;
+   background-color:white;
+   transform: rotate(35deg);
+}
+.nav__list {
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+.slash::after {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 100px;
+    width: 1px;
+    height: 18px;
+    background-color:white;
+}
+.slash::before {
+    content: "";
+    position: absolute;
+    top: -147px;
+    left: 210px;
+    width: 1px;
+    height: 18px;
+    background-color:white;
+}
+.layer {
+    width: 100%;
+    text-align: center;
+    background: url(../img/sea.png) no-repeat center;
+    background-size: 100% 100%;
+}
+h2 {
+    font-size:44px;
+    text-transform: uppercase;
+    color: white;
+    font-family: HelveticaLTStd Bold;
+}
+.title {
+    padding-top: 100px;
+}
+.sea__button {
+    margin-top: 46px;
+    margin-bottom: 120px;
+    width: 235px;
+    height: 48px;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-family: HelveticaLTStd-Light;
+    cursor: pointer;
+}
+.sea__circle {
+    margin-right: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border:  2px solid  white;
+    background-color: white;
+}
+.sea__item {
+    display: flex;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    justify-content: center;
+    list-style: none;
+}
+.sea__circle-color {
+    margin-right: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border:  2px solid  gray;
+    background-color: gray;
+}
+h3 {
+    font-family: HelveticaLTStd-Light;
+    font-size: 30px;
+    color: grey;
+}
+.text {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+.text__title {
+    padding-top: 86px;
+    padding-bottom: 10px;
+}
+.icons {
+    display: flex;
+    justify-content:center;
+    margin: 0 auto;
+    margin-bottom: 81px;
+    width: 70%;
+}
+.text__lowercase {
+    padding-top: 39px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-family: HelveticaLTStd Roman;
+    color: grey;
+}
+.text__end {
+    padding-bottom: 73px;
+    font-size: 14px;
+    font-family: HelveticaLTStd Roman;
+    color: grey;
+}
+.icons__cake {
+    margin-right: 124px;
+    width: 57px;
+    height: 57px;
+    background: url(../img/cake.png);
+}
+.icons__earth {
+    margin-right: 124px;
+    width: 57px;
+    height: 57px;
+    background: url(../img/earth.png);
+}
+.icons__box {
+    width: 57px;
+    height: 57px;
+    background: url(../img/box.png);
+}
+.testimonial {
+    background-color:#00D089 ;
+}
+.testimonial__position {
+    display: flex;
+    margin: 0 auto;
+    padding: 95px 0 0 160px;
+    width: 70%;
+    justify-content:center;
+}
+.testimonial__man {
+    margin-right: 20px;
+    width: 159px;
+    height: 199px;
+    z-index: 5;
+}
+.testimonial__name {
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: white;
+    font-family: helveticaltstd-bold;
+}
+.testimonial__position-text {
+    margin: 0 auto;
+    padding-bottom: 110px;
+    width: 70%;
+}
+.testimonial__text {
+    font-size: 18px;
+    color: white;
+    font-family: HelveticaLTStd-Light;
+}
+.contact {
+    height: 500px;
+    background: url(../img/map.png);
+}
+.circle {
+    position: relative;
+    top: 40px;
+    left: 400px;
+    width: 432px;
+    height: 432px;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    background-color: white;
+    opacity: 0.8;
+}
+.form {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    width: 60px;
+}
+.input {
+    margin-bottom: 13px;
+    padding-left: 10px;
+    width: 277px;
+    height: 33px;
+    font-size: 14px;
+}
+.textarea {
+    padding-left: 10px;
+    width: 277px;
+    height: 82px;
+    font-size: 14px;
+    resize: none;
+}
+.form__button {
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color:#00D089 ;
+    border: 1px solid #00D089;
+    cursor: pointer;
+}
+.form__button-pictures-x {
+    position: absolute;
+    left: 17.7px;
+    top: 32.5px;
+    transform: rotate(-45deg);
+    width: 10px;
+    height: 15px;
+    border-radius: 2px 2px 0 0;
+    opacity: 0.8;
+    background-color: white;
+}
+.form__button-pictures-y {
+    position: absolute;
+    left: 35px;
+    top: 22px;
+    width: 10px;
+    height: 35px;
+    transform: rotate(45deg);
+    border-radius: 2px 2px 2px 0;
+    opacity: 0.8;
+    background-color:white;
+}
+.footer {
+    text-align: center;
+    background-color:#00D089 ;
+}
+.footer__text {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: helveticalt-condensed;
+    color: white;
+}
+.footer__position {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+@font-face {
+    font-family: HelveticaLTStd-Light;
+    src: url(../fonts/HelveticaLTStd-Light.ttf);
+}
+@font-face {
+    font-family: HelveticaLTStd Bold;
+    src: url(../fonts/HelveticaLTStd\ Bold.otf);
+}
+@font-face {
+    font-family: HelveticaLTStd Roman;
+    src: url(../fonts/HelveticaLTStd\ Roman.otf);
+}
+@font-face {
+    font-family: CherrySwash-Regular;
+    src: url(../fonts/CherrySwash-Regular.ttf);
+}
+@font-face {
+    font-family: helveticaltstd-bold;
+    src: url(../fonts/HelveticaLTStd-Bold.ttf);
+}
+@font-face {
+    font-family: helveticalt-condensed;
+    src: url(../fonts/ofont.ru_Helvetica_Condenced-Normal.ttf);
+}
